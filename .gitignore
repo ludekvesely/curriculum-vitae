@@ -1,0 +1,13 @@
+main.aux
+main.log
+main.out
+main.synctex.gz
+main.tex.bak
+main.toc
+texput.log
+*.bak
+.DS_Store
+_minted-main
+main.lof
+main.lol
+main.lot

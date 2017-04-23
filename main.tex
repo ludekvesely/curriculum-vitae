@@ -1,0 +1,143 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[1pt,a4paper,verdana]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\usepackage{polyglossia}
+\setdefaultlanguage{czech}
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{4cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Luděk} % Your first name
+\familyname{Veselý} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvitem[0.75em]{}{%
+    \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#2\end{minipage}%
+    }%
+}
+
+\newcommand{\cvreference}[7]{%
+    \textbf{#1}\newline% Name
+    \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+    \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+    \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+    \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+    \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
+    \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
+
+\title{Curriculum Vitae}
+%\address{Hořanská 397}{Červené Pečky}
+%\mobile{+420 776 129 218}
+%\email{ludek.vesely@email.com}
+%\homepage{www.ludekvesely.cz} {www.ludekvesely.cz}% The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Vzdělání}
+
+\cventry{2015 - Současnost}{Magisterský obor Informační systémy a technologie}{Fakulta informatiky a statistiky}{Vysoká škola ekonomická v Praze}{}{}
+
+\cventry{2012 – 2015}{Bakalář oboru Informační technologie}{Fakulta mechatroniky, informatiky a mezioborových studií}{Technická univerzita v Liberci}{}{}
+
+
+\section{Technické dovednosti}
+
+\cvitem{Programování}{Pokročilá znalost PHP, Bash, Go, základní znalost Java SE, Python}
+\cvitem{Databáze a úložiště}{MySQL/Percona, Redis}
+\cvitem{Vyhledávání, logování}{Elastic Stack (Elasticsearch, Logstash, Kibana), RabbitMQ}
+\cvitem{Testování}{Codeception, PHPUnit}
+\cvitem{APIs}{Apiary, API Blueprint}
+\cvitem{Kontinuální integrace}{CircleCI, GitLab CI}
+\cvitem{Vývojová prostředí}{JetBrains IDEs, NetBeans, Vim}
+\cvitem{Správa verzí}{Git -- GitHub, GitLab, Bitbucket}
+\cvitem{Konfigurace}{Linux (Debian, Ubuntu, Alpine), NGINX}
+\cvitem{Linuxové kontejnery}{Docker, Docker Compose, Docker Cloud, Kubernetes, Rancher}
+\cvitem{Projektové řízení}{JIRA Agile, Trello, Slack, HipChat}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Praxe}
+
+\subsection{Atoto.cz s.r.o.}
+\cvitem{Období}{2016 - Současnost}
+\cvitem{Popis}{Vývoj backendu a nasazování portálu Atoto.cz -- platformy pro online prodej potravin lokálních prodejců s dovozem až do domu.}
+\cvitem{Technologie}{PHP (Symfony, Silex, Nette), MySQL, MongoDB, Elasticsearch, Redis, RabbitMQ, CircleCI, Kubernetes, Google Cloud Platform, GitHub, Trello}
+\cvitem{Role}{Backend Developer, DevOps Engineer}
+
+\subsection{AdBoos (PPC Boost s.r.o.)}
+\cvitem{Období}{2015 - 2017}
+\cvitem{Popis}{Vývoj a správa AdBoos.com -- nástroje pro efektivní automatizované řízení online reklamních kampaní prostřednictvím PPC systémů, zbožových srovnávačů a sociálních sítí.}
+\cvitem{Technologie}{PHP (Nette, Doctrine), PerconaDB, Redis, RabbitMQ, ELK Stack, Docker Cloud, GitLab CI, jQuery, GitLab, JIRA Agile}
+\cvitem{Role}{Founder, Developer}
+
+\subsection{Slever (JAREA s.r.o.)}
+\cvitem{Období}{2013 - 2015}
+\cvitem{Popis}{Vývoj a správa slevového portálu Slever.cz nabízející časově omezené akční nabídky.}
+\cvitem{Technologie}{PHP (Nette), MySQL, Debian, Elasticsearch, Kibana, Memcached, jQuery, GitHub, JIRA Agile}
+\cvitem{Role}{Developer}
+
+\subsection{Collectora s.r.o.}
+\cvitem{Období}{2012}
+\cvitem{Popis}{Vývoj inkasního systému Collectora, který je určen pro správu a řešení pohledávek včetně exekučního řízení}
+\cvitem{Technologie}{PHP, MySQL, jQuery, SVN, Redmine}
+\cvitem{Role}{Developer}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Publikace, přednášky}
+
+\cvitem{2016 - Současnost}{Vedení blogu s články o programování, vyhledávání, DevOps a dalších tématech: \url{www.ludekvesely.cz}}
+
+\cvitem{2016}{Přednáška na srazu Poslední sobota -- Cloudová, Hradec Králové: \textit{Docker a logování -- víte, co se děje ve vašich kontejnerech?}}
+
+\cvitem{2015}{Bakalářská práce na téma \textit{Databáze dopravních nehod v České republice}: \url{www.ludekvesely.cz/databaze-dopravnich-nehod-cr}}
+
+\end{document}
