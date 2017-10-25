@@ -36,10 +36,8 @@
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
-\firstname{Luděk} % Your first name
-\familyname{Veselý} % Your last name
-
-% All information in this block is optional, comment out any lines you don't need
+\firstname{Luděk}
+\familyname{Veselý}
 
 \newcommand{\cvdoublecolumn}[2]{%
   \cvitem[0.75em]{}{%
@@ -59,10 +57,10 @@
     \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
 
 \title{Curriculum Vitae}
-%\address{Hořanská 397}{Červené Pečky}
+%\address{Roháčova 1117/71}{Praha}
 %\mobile{+420 776 129 218}
 %\email{ludek.vesely@email.com}
-%\homepage{www.ludekvesely.cz} {www.ludekvesely.cz}% The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\homepage{https://www.ludekvesely.cz} {www.ludekvesely.cz}
 %\extrainfo{additional information}
 \photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{"A witty and playful quotation" - John Smith}
@@ -74,6 +72,38 @@
 \makecvtitle % Print the CV title
 
 %----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Kontakty}
+
+\cvitem{Adresa}{Roháčova 1117/71, Praha 3}
+\cvitem{Telefon}{+420 776 129 218}
+\cvitem{E-mail}{ludek.vesely@email.com}
+\cvitem{Web}{https://www.ludekvesely.cz}
+\cvitem{LinkedIn}{https://www.linkedin.com/in/ludek-vesely}
+\cvitem{GitHub}{https://github.com/ludekvesely}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Technické dovednosti}
+
+\cvitem{Programování}{Pokročilá znalost PHP (Nette, Symfony, Silex), skriptování v Bash, základní znalost Go}
+\cvitem{Databáze a úložiště}{MySQL/Percona, Postgres, MongoDB, Redis}
+\cvitem{Vyhledávání, logování}{Elastic Stack (Elasticsearch, Logstash, Kibana)}
+\cvitem{Testování}{Codeception, PHPUnit}
+\cvitem{APIs}{REST, JSON-RPC, Apiary, API Blueprint}
+\cvitem{Kontinuální integrace}{CircleCI, GitLab CI}
+\cvitem{Vývojová prostředí}{JetBrains IDEs, NetBeans, Vim}
+\cvitem{Správa verzí}{Git -- GitHub, GitLab, Bitbucket}
+\cvitem{Operační systémy}{Linux -- Debian, Ubuntu, Alpine}
+\cvitem{Další nástroje}{RabbitMQ, NGINX}
+\cvitem{Linuxové kontejnery}{Docker, Docker Compose, Docker Cloud, Kubernetes, Rancher}
+\cvitem{Projektové řízení}{JIRA Agile, Trello, Slack, HipChat}
+
+%----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
@@ -82,21 +112,6 @@
 \cventry{2015 - Současnost}{Magisterský obor Informační systémy a technologie}{Fakulta informatiky a statistiky}{Vysoká škola ekonomická v Praze}{}{}
 
 \cventry{2012 – 2015}{Bakalář oboru Informační technologie}{Fakulta mechatroniky, informatiky a mezioborových studií}{Technická univerzita v Liberci}{}{}
-
-
-\section{Technické dovednosti}
-
-\cvitem{Programování}{Pokročilá znalost PHP, Bash, Go, základní znalost Java SE, Python}
-\cvitem{Databáze a úložiště}{MySQL/Percona, Redis}
-\cvitem{Vyhledávání, logování}{Elastic Stack (Elasticsearch, Logstash, Kibana), RabbitMQ}
-\cvitem{Testování}{Codeception, PHPUnit}
-\cvitem{APIs}{Apiary, API Blueprint}
-\cvitem{Kontinuální integrace}{CircleCI, GitLab CI}
-\cvitem{Vývojová prostředí}{JetBrains IDEs, NetBeans, Vim}
-\cvitem{Správa verzí}{Git -- GitHub, GitLab, Bitbucket}
-\cvitem{Konfigurace}{Linux (Debian, Ubuntu, Alpine), NGINX}
-\cvitem{Linuxové kontejnery}{Docker, Docker Compose, Docker Cloud, Kubernetes, Rancher}
-\cvitem{Projektové řízení}{JIRA Agile, Trello, Slack, HipChat}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
@@ -129,12 +144,14 @@
 \cvitem{Role}{Developer}
 
 %----------------------------------------------------------------------------------------
-%	AWARDS SECTION
+%	PUBLIATIONS
 %----------------------------------------------------------------------------------------
 
 \section{Publikace, přednášky}
 
-\cvitem{2016 - Současnost}{Vedení blogu s články o programování, vyhledávání, DevOps a dalších tématech: \url{www.ludekvesely.cz}}
+\cvitem{2017}{Diplomová práce na téma fulltextové vyhledávání jako služba: \url{www.ludekvesely.cz/diplomova-prace-vyhledavani-jako-sluzba}}
+
+\cvitem{2016 - Současnost}{Vedení blogu s články o programování, vyhledávání (Elasticsearch), DevOps a dalších tématech: \url{www.ludekvesely.cz}}
 
 \cvitem{2016}{Přednáška na srazu Poslední sobota -- Cloudová, Hradec Králové: \textit{Docker a logování -- víte, co se děje ve vašich kontejnerech?}}
 
