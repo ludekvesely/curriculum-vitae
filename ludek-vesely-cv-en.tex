@@ -1,0 +1,160 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[1pt,a4paper,verdana]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\usepackage{polyglossia}
+\setdefaultlanguage{czech}
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{4cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Luděk}
+\familyname{Veselý}
+
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvitem[0.75em]{}{%
+    \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#2\end{minipage}%
+    }%
+}
+
+\newcommand{\cvreference}[7]{%
+    \textbf{#1}\newline% Name
+    \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+    \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+    \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+    \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+    \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
+    \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
+
+\title{Curriculum Vitae}
+%\address{Roháčova 1117/71}{Prague}
+%\mobile{+420 776 129 218}
+%\email{ludek.vesely@email.com}
+%\homepage{https://www.ludekvesely.cz} {www.ludekvesely.cz}
+%\extrainfo{additional information}
+\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Contacts}
+
+\cvitem{E-mail}{ludek.vesely@email.com}
+\cvitem{Mobile}{+420 776 129 218}
+\cvitem{Address}{Roháčova 1117/71, Prague 3}
+\cvitem{Website}{https://www.ludekvesely.cz/o-mne/}
+\cvitem{LinkedIn}{https://www.linkedin.com/in/ludek-vesely}
+\cvitem{GitHub}{https://github.com/ludekvesely}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Technical skills}
+
+\cvitem{Programming}{Advancend knowledge of PHP (Nette, Symfony), Bash scripting, basic knowledge of Golang}
+\cvitem{Databases}{MySQL, Elasticsearch, basic knowledge of MongoDB and Redis}
+\cvitem{Search, logging}{Elastic Stack (Elasticsearch, Logstash, Kibana)}
+\cvitem{Testing}{Codeception, PHPUnit}
+\cvitem{APIs}{REST, JSON-RPC, Apiary, API Blueprint}
+\cvitem{Continuous Integration}{CircleCI, GitLab CI}
+\cvitem{IDEs}{JetBrains IDEs, NetBeans, Vim}
+\cvitem{Version Control}{Git -- GitHub, GitLab, Bitbucket, Git Flow}
+\cvitem{Operating Systems}{Linux -- Debian, Ubuntu, Alpine}
+\cvitem{Others}{RabbitMQ, NGINX}
+\cvitem{Linux Containers}{Docker, Kubernetes, Rancher}
+\cvitem{Project Management}{JIRA, Trello, Slack}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2015 - 2017}{Master's degree, Information systems and technologies}{Faculty of Informatics and Statistics}{University of Economics  Prague}{}{}
+
+\cventry{2012 – 2015}{Bachelor's degree, Information tachnology}{Faculty of Mechatronics, Informatics and Interdisciplinary Studies}{Technical University of Liberec}{}{}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Work}
+
+\subsection{Atoto.cz s.r.o.}
+\cvitem{Time Period}{2016 - present}
+\cvitem{Description}{Development of backend (API for frontend) and operations of portal Atoto.cz -- online marketplace for local food shops.}
+\cvitem{Technologies}{PHP (Symfony, Silex, Nette), MySQL, MongoDB, Elasticsearch, RabbitMQ, CircleCI, Kubernetes, Google Cloud Platform, GitHub, Trello}
+\cvitem{Roles}{Backend Developer, DevOps Engineer}
+
+\subsection{AdBoos (PPC Boost s.r.o.)}
+\cvitem{Time Period}{2015 - 2017}
+\cvitem{Description}{Development and operations of AdBoos.com -- a tool for automatic control of online ads in PPC systems, comparison shopping engines and social networks.}
+\cvitem{Technologies}{PHP (Nette, Doctrine), PerconaDB, Redis, RabbitMQ, ELK Stack, Docker Cloud, GitLab CI, jQuery, GitLab, JIRA Agile}
+\cvitem{Roles}{Co-founder, Developer}
+
+\subsection{Slever (JAREA s.r.o.)}
+\cvitem{Time Period}{2013 - 2015}
+\cvitem{Description}{Development of website Slever.cz with time limited discounts.}
+\cvitem{Technologies}{PHP (Nette), MySQL, Debian, Elasticsearch, Kibana, Memcached, jQuery, GitHub, JIRA Agile}
+\cvitem{Roles}{Developer}
+
+\subsection{Collectora s.r.o.}
+\cvitem{Time Period}{2012}
+\cvitem{Description}{Development of web application Collectora for collection companies.}
+\cvitem{Technologies}{PHP, MySQL, jQuery, SVN, Redmine}
+\cvitem{Roles}{Developer}
+
+%----------------------------------------------------------------------------------------
+%	PUBLIATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\cvitem{2017}{Diploma thesis Fulltext Search as a Service: \url{www.ludekvesely.cz/diplomova-prace-vyhledavani-jako-sluzba} [CZ]}
+
+\cvitem{2016 - present}{Blog about fulltext search (Elasticsearch), Docker, Kubernetes and other topics: \url{www.ludekvesely.cz} [CZ]}
+
+\cvitem{2016}{Talk on meetup Poslední sobota -- Cloudová, Hradec Králové: \textit{Centralization of Docker logs with Logspout and Elastic Stack} \url{https://github.com/ludekvesely/docker-logspout-elk} [EN]}
+
+\cvitem{2015}{Bachelor thesis \textit{Database Design and Implementation for Road Accidents in the Czech Republic}: \url{www.ludekvesely.cz/databaze-dopravnich-nehod-cr} [CZ]}
+
+\end{document}
